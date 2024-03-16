@@ -1,6 +1,7 @@
 const { Builder, Browser, By, Key, until } = require("selenium-webdriver");
 const assert = require("assert");
-//require("chromedriver");
+require("chromedriver");
+require("geckodriver");
 // Works with selenium web driver 
 // selenium-webdriver": "4.18.1"
 
