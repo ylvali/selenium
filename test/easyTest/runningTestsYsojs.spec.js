@@ -1,5 +1,21 @@
 const {By, Builder} = require('selenium-webdriver');
 const assert = require("assert");
+require("chromedriver");
+require("chromedriver");
+// Works with selenium web driver 
+// selenium-webdriver": "4.18.1"
+
+
+// "selenium-webdriver": "3.0.0" - then crome driver is required
+//   "mocha": "5.2.0"
+
+// "dependencies": {
+//   "assert": "^2.1.0",
+//   "selenium-webdriver": "3.0.0"
+// },
+// "devDependencies": {
+//   "mocha": "5.2.0"
+// }
 
   describe('Ysojs - 3 easy testcases', function () {
     let driver;
@@ -15,8 +31,8 @@ const assert = require("assert");
       assert.equal("Yso App", title);
       console.log(title);
     
-      await driver.manage().setTimeouts({implicit: 500});
-      // driver.manage().timeouts().implicitlyWait(2000);
+      //await driver.manage().setTimeouts({implicit: 500});
+       driver.manage().timeouts().implicitlyWait(2000); // selenium driver 3.0.0
   
       // 3 easy test cases
       // Check a navigation link
