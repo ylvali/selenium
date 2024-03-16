@@ -2,18 +2,16 @@
     "name": "javascript-examples",
     "version": "1.0.0",
     "scripts": {
-        "test": "mocha test/**/*.spec.js --timeout 120000"
+        "test": "mocha test/**/*.spec.js --timeout 6000"
     },
     "author": "The Selenium project",
     "license": "Apache-2.0",
     "dependencies": {
-        "assert": "^2.1.0",
-        "selenium-webdriver": "4.4.0"
+        "assert": "^2.1.0"
     },
     "devDependencies": {
-        "chromedriver": "77.0.0",
-        "geckodriver": "^4.3.3",
-        "mocha": "5.2.0",
-        "xvfb": "^0.4.0"
+        "mocha": "^4.1.0",
+        "selenium-webdriver": "^3.6.0",
+        "http-server": "^0.11.1"
     }
 }
