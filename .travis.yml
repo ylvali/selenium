@@ -11,7 +11,11 @@ addons:
     sources:
       - google-chrome
     packages:
-      - google-chrome-stable
+      - google-chrome
+
+addons:
+  firefox: stable
+  chrome: stable
   
 git:
     submodules: false
