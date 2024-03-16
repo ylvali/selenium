@@ -1,15 +1,14 @@
 language: node_js
 
 node_js:
+    - "8"
     - "10"
-    - "11"
-    - "12"
-    - "14"
-    - "18"
 
 sudo: required
 
-dist: xenial
+before_install:
+  - export PATH=$PATH:$PWD/geckodriver
+
 addons:
   chrome: stable
   
