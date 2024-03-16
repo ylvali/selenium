@@ -6,11 +6,8 @@ node_js:
 
 sudo: required
 
-before_install:
-  - export PATH=$PATH:$PWD/geckodriver
-
 addons:
-  chrome: stable
+  firefox: stable
   
 git:
     submodules: false
