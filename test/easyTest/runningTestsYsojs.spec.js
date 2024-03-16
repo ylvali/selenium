@@ -1,6 +1,6 @@
 const { Builder, Browser, By, Key, until } = require("selenium-webdriver");
 const assert = require("assert");
-//require('chromedriver');
+require('chromedriver');
 
 // Works with selenium web driver 
 // selenium-webdriver": "4.18.1"
@@ -21,7 +21,7 @@ const assert = require("assert");
     let driver;
     
     before(async function () {
-      driver = await new Builder().forBrowser('firefox').build();
+      driver = await new Builder().forBrowser('chrome').build();
     });
     
     it('First Selenium script with mocha', async function () {
