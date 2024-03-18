@@ -4,11 +4,15 @@ node_js:
     - "8"
     - "10"
 
-sudo: required
-dist: xenial
+sudo: false
 
+dist: xenial
+services:
+  - xvfb
 addons:
-  chrome: stable
+  apt:
+    sources:
+      - google-chrome
   
 git:
     submodules: false
